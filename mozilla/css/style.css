@@ -1,0 +1,207 @@
+html{
+    box-sizing: border-box;
+}
+body, .lato{
+    font-family: 'Lato', sans-serif;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+.zilla, h1,h2,h3,h4,h5,h6{
+    font-family: 'Zilla Slab', serif;
+}
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+/*common classes*/
+.flex{display: flex;}
+.justify-between{justify-content: space-between;}
+.align-center{align-items: center;}
+
+.container{
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+/*button*/
+.btn{
+    display: inline-block;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    outline: transparent;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    user-select: none;
+    opacity: 1;
+}
+.btn.primary{
+    background-color: #000;
+    color: #fff;
+}
+.btn:hover{
+    opacity: .8;
+}
+/*images*/
+.responsive{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+
+/*page-header*/
+.page-header{
+    background-color: #fff;
+}
+.main-head{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+.page-header .container{
+    display: flex;
+    align-items: center;
+}
+.page-header .brand{
+    margin-right: 2rem;
+}
+.main-nav{
+
+}
+.nav-links{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li + li{
+    margin-left: 1rem;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    padding: 2rem 0;
+}
+.user-login{
+    margin-left: auto;
+}
+
+/*hero*/
+.hero .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: transparent url(../images/bero-bg.jpg) no-repeat center bottom;
+
+}
+.hero-text{
+    width: 100%;
+    max-width: 860px;
+    text-align: center;
+}
+.hero-text h2{
+    font-size: 3rem;
+}
+.hero-text h4{
+    font-size: 1.4rem;
+    margin: 3rem 0;
+}
+
+/*service-highlight*/
+.service-highlight{
+    padding: 4rem 0;
+    background: #f4f4f4 linear-gradient(#ededf0,#fff);
+}
+.section-head{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.section-head h2{
+    font-size: 2rem;
+}
+
+.service-highlight .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+}
+.service-card{
+}
+.service-card .card-link{
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+.service-card .card-body{
+    padding: .8rem;
+}
+.service-card h3{
+    font-size: 1.6rem;
+}
+.service-card p{
+    font-size: 1rem;
+    margin: .6rem 0;
+}
+
+/*footer*/
+.page-footer{
+    padding: 2rem 0 1rem;
+    background-color: #000;
+    color: #fff;
+}
+.footer-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-footer a{
+    text-decoration: none;
+    color: #fff;
+}
+.page-footer .main-footer{
+    display: flex;
+}
+.page-footer .links-card{
+    flex: 0 0 25%;
+}
+.page-footer h3{
+    font-size: 1.6rem;
+    padding: 2rem 0;
+}
+.page-footer h4{
+    font-size: 1.2rem;
+    margin: 0 0 .6rem;
+}
+
+.footer-links{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: .8rem;
+}
+.footer-links li{
+    margin: 0 0 .6rem ;
+}
+.sub-footer{
+    padding: 2rem 0 0;
+}
+.sub-footer small{
+    font-size: .7rem;
+    color: #ccc;
+}
+.social-links a{
+    margin-left: 1rem;
+}
