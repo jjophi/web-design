@@ -10,20 +10,26 @@
 <body>
     <header class="page-head">
         <div class="sub-head">
-            <div class="container flex">
-                <div>
-                    <svg width="24" height="24" fill="white" class="align-middle">
+            <div class="container">
+                <div class="info">
+                    <svg width="18" height="18" fill="white" class="align-middle">
                         <use xlink:href="images/bootstrap-icons.svg#envelope"/>
                     </svg>
-                    <span class="ml4">info@physiohealinghands.com</span>
+                    <span>info@physiohealinghands.com</span>
                 </div>
-                <div class="ml16">
-                    <svg width="24" height="24" fill="white" class="align-middle">
+                <div class="info">
+                    <svg width="18" height="18" fill="white" class="align-middle">
                         <use xlink:href="images/bootstrap-icons.svg#geo-alt"/>
                     </svg>
-                    <span class="ml2">info@physiohealinghands.com</span>
+                    <span>21 Frairs Square Shopping Centre <br>Aylesbury HP202SP</span>
                 </div>
-                <div class="ml-auto">
+                <div class="info">
+                    <svg width="18" height="18" fill="white" class="align-middle">
+                        <use xlink:href="images/bootstrap-icons.svg#clock"/>
+                    </svg>
+                    <span>Monday - Saturday: 9AM - 7PM<br> Sunday: 11AM - 6PM</span>
+                </div>
+                <div class="info-phone">
                     <span class="label-text">Call for an appointment: </span>
                     <span class="tel-num ml4">07901 932 769</span>
                 </div>
@@ -34,7 +40,7 @@
             <div class="container ">
                 <div class="brand">
                     <img src="images/physio-logo.svg" alt="" class="logo">
-                    <div class="logo-text ml8">
+                    <div class="logo-text">
                         <h1>Physio Healing Hands</h1>
                         <h2>Specilalist physiotherapy for neurological conditions</h2>
                     </div>
@@ -66,10 +72,16 @@
                     <h3>Book an Appointment</h3>
                     <form action="#">
                         <div class="form-control">
-                            <input type="text" class="form-field" placeholder="Name">
+                            <input type="text" id="field-name" class="form-field" placeholder="Name">
                         </div>
                         <div class="form-control">
-                            <input type="text" class="form-field" placeholder="Phone Number">
+                            <input type="text" id="field-phone" class="form-field" placeholder="Phone Number">
+                        </div>
+                        <div class="form-control">
+                            <input type="text" id="field-email" class="form-field" placeholder="Email">
+                        </div>
+                        <div class="form-control">
+                            <textarea name="" id="" cols="30" rows="5" id="field-message" placeholder="Message"></textarea>
                         </div>
                         <div class="form-control">
                             <input type="submit" value="Book an appointment">
@@ -144,19 +156,18 @@
     </main>
     <footer class="page-footer">
         <div class="container">
-            <address class="col">
+            <address class="col address">
                 <h4>Locate us</h4>
                 <p>Physio Healing Hands Private Ltd.<br>
-                Unit 14 Duck Farm Court<br>
-                Station Way, Aylesbury<br>
-                Buckinghamshire, HP20 2SQ</p>
+                    21 Frairs Square Shopping Centre<br>
+                    Aylesbury HP202SP</p>
                 
                 <p>Ph: 07901 932 769<br>
                 info@physiohealinghands.com</p>
             </address>
             <div class="col quick-links">
                 <h4>Quick Links</h4>
-                <ul class="quick-links">
+                <ul class="links quick-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Treatments</a></li>
@@ -166,11 +177,17 @@
                 </ul>
             </div>
             <div class="col social-network">
-                <ul class="social-links">
-                    <li><a href="#">FB</a></li>
-                    <li><a href="#">TW</a></li>
+                <h4>Networks</h4>
+                <ul class="links social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
                    
                 </ul>
+            </div>
+            <div class="col timings">
+                <h4>We are available</h4>
+                <p>Monday - Saturyday<br> 9AM - 7PM</p>
+                <p>Sunday<br> 11AM - 6PM</p>
             </div>
 
         </div>
