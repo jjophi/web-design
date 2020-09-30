@@ -367,7 +367,23 @@ input, textarea{
     color: #fff;
 }
 @media (max-width: 540px){
-
+    /* .service-highlight{
+        padding: 2rem 0;
+    }
+    .service-highlight .container{
+        display: block;
+    }
+    .service-highlight .card{
+        width: 100%;
+    }
+    .service-highlight a{
+        display: flex;
+        align-items: flex-start;
+    }
+    .service-highlight .card-header{
+        flex: 0 0 auto;
+        width: 40%;
+    } */
 }
 @media (max-width: 1024px){
 
