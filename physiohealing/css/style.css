@@ -1,6 +1,6 @@
 :root{
     --primary: #3db36b;
-    --secondary: #ff6a00;
+    --secondary: #000;
 }
 html{
     height: 100%;
@@ -31,7 +31,7 @@ input, textarea{
     text-decoration: none;
     text-transform: uppercase;
     padding: 0.8rem 1.6rem;
-    background-color: #000;
+    background-color: var(--secondary);
     color: #fff;
     border-radius: 0;
     border: none;
@@ -69,6 +69,7 @@ input, textarea{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 10;
 }
 .main-head{
     background-color: #fff;
@@ -141,7 +142,7 @@ input, textarea{
 .brand h2{
     font-size: 0.78rem;
     letter-spacing: 0.05rem;
-    color: #000000;
+    color: var(--secondary);
 }
 .logo-text{
     margin-left: 8px;
@@ -160,7 +161,7 @@ input, textarea{
 .nav-links a{
     display: inline-block;
     text-decoration: none;
-    color: #000;
+    color: var(--secondary);
     padding: 2.2rem 0;
     margin-left: 1.2rem;
     text-transform: uppercase;
@@ -203,7 +204,7 @@ input, textarea{
 .hero-text h3{
     font-size: 1.4rem;
     display: block;
-    color: #000;
+    color: var(--secondary);
     margin-bottom: 1rem;
 }
 .quick-contact{
@@ -224,7 +225,7 @@ input, textarea{
     width: 100%;
     padding: .5rem;
     font-size: .9rem;
-    color: #000;
+    color: var(--secondary);
     border: 1px solid #d3d3d3;
     border-radius: 0;
 }
@@ -319,14 +320,14 @@ input, textarea{
 .service-highlight a{
     display: block;
     text-decoration: none;
-    color: #000;
+    color: var(--secondary);
 }
 .service-highlight .card:hover{
     box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
 }
 .service-highlight .card:hover h3{
     text-decoration: underline;
-    color: #000;
+    color: var(--secondary);
 }
 
 /*collaborations*/
