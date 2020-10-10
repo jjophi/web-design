@@ -95,6 +95,7 @@ a{
     color: #FFBE16;
 }
 .main-nav{
+    display: none;
     position: fixed;
     top: 0;
     width: 100%;
@@ -102,6 +103,9 @@ a{
     height: 100%;
     background-color: rgba(0,0,0, 0.74);
     z-index: 10;
+}
+.main-nav.active{
+    display: block;
 }
 .main-link{
     font-size: .9em;
@@ -113,6 +117,17 @@ a{
     width: 220px;
     background-color: #0B2B3F;
     padding: 4rem 2rem 2rem;
+}
+.main-nav.active .main-link{
+    animation: menuSlidein 0.3s;
+}
+@keyframes menuSlidein{
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 .main-link > li{
     position: relative;
@@ -145,7 +160,7 @@ a{
     padding: .2rem 0;
 }
 .main-link .sub-links a{
-    color: #fff;
+    color: #a4dcff;
 }
 .main-link .sub-links li:hover a{
     font-weight: 700;
@@ -387,40 +402,43 @@ a{
 .sec-collaboration{
     background-color: #fff;
 }
+
 .sec-collaboration .container{
+    padding: 2rem 0;
     height: auto;
 }
 .collaboration{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     background-color: #fff;
     position: relative;
     font-size: .8rem;
+    width: 80%;
+    margin: 0 auto;
 }
 .collaboration .item{
-    width: 40%;
-    padding: 1rem 2rem;
+    padding: 2rem 2.6rem 1.4rem;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 12px solid #E5E5E5;
-    margin: 0.4rem;
+    border-bottom: 8px solid #E5E5E5;
+}
+.collaboration p{
+    font-weight: 500;
+    text-align: center;
+    color: #0F6EB4;
+    
+}
+.collaboration .item img{
+    width: 68%;
+    min-width: 100px;
+    margin-bottom: 0.6rem;
 }
 .collaboration .item:hover{
     border-bottom-color: #00609B;
 }
-.collaboration .item img{
-    flex: 0 0 auto;
-    width: auto;
-}
-.collaboration .item a{
-    display: block;
-    width: 142px;
-    text-align: center;
-    color: #0F6EB4;
-}
+
 /*footer*/
 .page-footer{
     color: #fff;
@@ -538,13 +556,14 @@ a{
         font-size: 2rem;
         margin: 0 auto;
     }
-    .collaboration .item{
+    /* .collaboration .item{
         width: 40%;
         margin: 1rem;
-    }
+    } */
 }
 @media only screen and (min-width: 1024px) {
     .main-nav{
+        display: block;
         position: static;
         width: auto;
     }
@@ -607,27 +626,22 @@ a{
     .sec-gallery{
         padding: 5rem 0 10rem;
     }
+
     /*collaboration*/
     .sec-collaboration .container{
-        height: 124px;
+        height: 120px;
+        padding: 0;
     }
     .collaboration{
-        display: flex;
-        justify-content: space-between;
-        background-color: #fff;
-        position: relative;
-        top: -70%;
-        font-size: .8rem;
-        width: 80%;
-        height: 150%;
-        margin: 0 auto;
-        border-radius: 6px;
-        box-shadow: 0 0 4px 3px rgba(0,0,0,0.2);
+        top: -100%;
+        border-radius: 4px;
+        box-shadow: 0 0 4px 2px rgba(0,0,0,0.2);
     }
-    .collaboration .item{
-        width: 25%;
-        margin: 0;
+    .collaboration p{
+        width: 92%;
     }
+    
+
     /*footer*/
     .page-footer .container{
         width: 100%;
