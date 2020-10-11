@@ -91,8 +91,10 @@ input, textarea{
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
     font-size: .94rem;
-    display: flex;
-    justify-content: flex-start;
+    /* display: flex;
+    justify-content: flex-start; */
+    display: grid;
+    grid-template-columns: repeat(3, 22%)  auto;
 }
 .sub-head .label-text{
     font-size: .66rem;
@@ -385,7 +387,10 @@ input, textarea{
         flex: 0 0 auto;
         width: 40%;
     } */
+
+    
 }
 @media (max-width: 1024px){
 
+    
 }
