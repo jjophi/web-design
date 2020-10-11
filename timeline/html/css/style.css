@@ -1,0 +1,66 @@
+/*base*/
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+/*timeline*/
+.container{
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.sales-timeline{
+
+}
+.sales-timeline .timeline-header{
+    
+}
+.sales-timeline .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 .6rem;
+}
+.sales-timeline h2{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.sales-timeline .controls{
+
+}
+.sales-timeline .search-control{
+
+}
+.sales-timeline .time-display{
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+    font-weight: 500;
+}
+.sales-timeline  .time-nav{
+    margin-right: .4rem;
+}
+
+
+.timeline-listing{
+    padding: 1rem 0;
+}
