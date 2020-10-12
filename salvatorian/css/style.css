@@ -55,10 +55,19 @@ a{
     background-color: transparent;
     color: #E6A730;
 }
+.page-header{
+    position: relative;
+    padding-top: 80px;
+    z-index: 9;
+}
 /*header nav*/
 .page-nav{
-    background-color: #0B2B3F;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     color: #fff;
+    background-color: #0B2B3F;
 }
 .page-nav .container{
     height: 80px;
