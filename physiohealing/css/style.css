@@ -335,6 +335,11 @@ h2.sec-title{
 }
 .appointment .contacts{
     margin-bottom: 1rem;
+    color: #000;
+    font-size: 1.2rem;
+}
+.appointment .contacts a{
+    color: #000;
 }
 .appointment-address{
     background-color: #f4f4f4;
@@ -367,6 +372,23 @@ h2.sec-title{
     resize: vertical;
 }
 
+/*map*/
+.map{
+    padding: 0 0 2rem;
+}
+.google-map{
+    position: relative;
+    padding-bottom: 40%;
+    height: 0;
+    overflow: hidden;
+}
+.google-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
 
 /*collaboration*/
 .page-collaboration{
