@@ -27,6 +27,8 @@ img {
     margin: 0 auto;
     padding: 0 1rem;
 }
+
+
 .sales-timeline{
 
 }
@@ -46,8 +48,14 @@ img {
 .sales-timeline .controls{
 
 }
-.sales-timeline .search-control{
-
+.sales-timeline .search-control input{
+    border: 1px solid #ccc;
+    padding: 4px;
+    outline: transparent;
+}
+.sales-timeline .search-control input::placeholder{
+    color: #b5b5b5;
+    font-size: .7rem;
 }
 .sales-timeline .time-display{
     display: flex;
