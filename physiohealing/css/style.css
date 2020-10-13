@@ -59,16 +59,15 @@ a{
     color: #fff;
 }
 .sub-head .container{
-    font-size: .94rem;
+    font-size: .8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 40px;
     padding: 0;
 }
 .sub-head .info{
     flex: 1 1 auto;
-    width: 1fr;
     height: 100%;
     display: flex;
     flex-flow: column;
@@ -78,18 +77,23 @@ a{
 .sub-head .label-text{
     font-size: .66rem;
     text-transform: uppercase;
-    font-size: .7rem;
+    font-size: .6rem;
 }
 .sub-head .tel-num{
     color: #fff;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1rem;
+}
+.sub-head .info.booking a{
+    color: #fff;
 }
 .sub-head .info.email{
     background-color: #23d080;
+    display: none;
 }
 .sub-head .info.timing{
     background-color: #3db980;
+    display: none;
 }
 .sub-head .info.booking{
     background-color: #24a76a;
@@ -164,7 +168,7 @@ a{
     background-size: cover;
 }
 .hero .container{
-    height: 94vh;
+    height: 320px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -301,7 +305,19 @@ a{
 }
 
 @media only screen and (min-width: 560px) {
-    
+    .sub-head .container{
+        font-size: .94rem;
+        height: 60px;
+    }
+    .sub-head .info.timing{
+        display: flex;
+    }
+    .sub-head .label-text{
+        font-size: .7rem;
+    }
+    .sub-head .tel-num{
+        font-size: 1.3rem;
+    }
     .brand h1{
         font-size: 1.9rem;
     }
@@ -310,6 +326,9 @@ a{
     }
 
     .main-head .container{
+    }
+    .hero .container{
+        height: 94vh;
     }
 
     .hero-text h2{
@@ -348,6 +367,9 @@ a{
 }
 
 @media only screen and (min-width: 1024px) {
+    .sub-head .info.email{
+        display: flex;
+    }
     .brand{
         flex-flow: row;
         padding: 0;
