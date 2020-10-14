@@ -69,6 +69,12 @@ h2.sec-title{
 
 
 /*site*/
+.page-header{
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
 /*sub-head*/
 .sub-head{
     background-color: var(--primary);
@@ -328,22 +334,21 @@ h2.sec-title{
     padding: 2rem 0;
 }
 .appointment .booking-form{
-    
+    width: 100%;
 }
 .appointment-form{
-    padding: 0 1.6rem;
+    padding: 0 .6rem;
 }
 .appointment .contacts{
-    margin-bottom: 1rem;
     color: #000;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
 }
 .appointment .contacts a{
     color: #000;
 }
 .appointment-address{
-    background-color: #f4f4f4;
-    padding: 2rem;
+    padding: 0.6rem;
 }
 .appointment-address h6{
     color: var(--primary);
@@ -378,7 +383,7 @@ h2.sec-title{
 }
 .google-map{
     position: relative;
-    padding-bottom: 40%;
+    padding-bottom: 80%;
     height: 0;
     overflow: hidden;
 }
@@ -543,7 +548,22 @@ h2.sec-title{
     .page-about p{
         font-size: 1.2rem;
     }
-
+    .map{
+        padding: 2rem 0 4rem;
+    }
+    .google-map{
+        padding-bottom: 40%;
+    }
+    .appointment-form{
+        padding: 0 1.6rem;
+    }
+    .appointment-address{
+        padding: 2rem;
+    }
+    .appointment .contacts{
+        font-size: 1.2rem;
+    }
+ 
 
     .footer-main .container{
         grid-template-columns: minmax(280px, 2fr) repeat(auto-fit, minmax(120px, 1fr));
@@ -581,7 +601,8 @@ h2.sec-title{
         border-bottom: 6px solid transparent;
     }
     .appointment .booking-form{
-        display: flex
+        display: flex;
+        width: 80%;
     }
     .appointment .booking-form > div{
         width: 50%;
