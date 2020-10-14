@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physio Healing Hands</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="page-header">
+        <div class="sub-head">
+            <div class="container">
+                <div class="info email">
+                    <span>info@physiohealinghands.com</span>
+                </div>
+               
+                <div class="info timing">
+                    <span>Monday - Saturday: 9AM - 7PM<br> Sunday: 11AM - 6PM</span>
+                </div>
+                <div class="info booking">
+                    <a href="#book-appointment">Book an Appointment</a>
+                </div>
+                <div class="info phone">
+                    <span class="label-text">Call for an appointment: </span>
+                    <a href="tel:07901932769" class="tel-num ml4">07901 932 769</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-head">
+            <div class="container">
+                <div class="brand">
+                    <img src="images/physio-logo.svg" alt="" class="logo">
+                    <div class="logo-text">
+                        <h1>Physio Healing Hands</h1>
+                        <h2>Specilalist physiotherapy for neurological conditions</h2>
+                    </div>
+                    <a href="#" class="nav-btn show"></a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Treatments</a></li>
+                        <li><a href="#">FES</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-nav">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Treatments</a></li>
+            <li><a href="#">FES</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="#" class="nav-btn close"></a>
+        <div class="bg-overlay"></div>
+    </div>
+
+    <main>
+        <section class="page-section">
+            <div class="container">
+                <div class="col title">
+                    <h2>FES – What it is?</h2>
+                </div>
+                <div class="col content">
+                    <p>Functional Electrical Stimulation (FES) is a treatment that applies small electrical charges to paralysed muscles to improve mobility if you have have difficulties with walking arising from damage in your brain or spinal cord. The electrical impulses work by exciting the nerves leading to the muscles and the stimulation is controlled in such a way that the movement produced provides useful function and is not painful at all. Self-adhesive patches (electrodes) are usually placed on the skin close to the nerve supplying the muscle; this is often over the centre of the muscle. Leads connect the electrodes to a stimulator that produces the impulses.</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="col title">
+                    <h3>For whom?</h3>
+                </div>
+                <div class="col content">
+                    <p>FES can be used to correct foot drop after a stroke and is sometimes used with additional muscle groups to aid walking commonly with multiple sclerosis sufferers. There are different devices on the market and we can advise on prices and what would be most suitable for you. The National Institute for Clinical Excellence (NICE) has declared FES as safe and effective treatment for foot drop.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col title">
+                    <h3>How to get FES treatment</h3>
+                </div>
+                <div class="col content">
+                    <p>An assessment by a health professional trained in the use of FES is required to ensure that the treatment will be suitable for you. The health professional will also teach you to place the pads correctly so the FES works as well as possible and that the equipment is being used most effectively.</p>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <section class="footer-main">
+            <div class="container">
+                <address class="col address">
+                    <h4>Locate us</h4>
+                    <p>Physio Healing Hands Private Ltd.<br>
+                        21 Frairs Square Shopping Centre<br>
+                        Aylesbury HP202SP</p>
+                    
+                    <p>Ph: 07901 932 769<br>
+                    info@physiohealinghands.com</p>
+                </address>
+                <div class="col quick-links">
+                    <h4>Quick Links</h4>
+                    <ul class="links quick-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Treatments</a></li>
+                        <li><a href="#">FES</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col social-network">
+                    <h4>Networks</h4>
+                    <ul class="links social-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="col timings">
+                    <h4>Timings</h4>
+                    <p>Monday - Saturyday <span> 9AM - 7PM</span></p>
+                    <p>Sunday <span>11AM - 6PM</span></p>
+                </div>
+
+            </div>
+        </section>
+        <section class="footer-copyright">
+            <div class="container">
+                <p>Content copyrighted &copy 2020 Physio Healing Hands</p>
+            </div>
+        </section>
+    </footer>
+
+<script>
+//menu toggle
+let navEl = document.querySelector('.mobile-nav');
+let navBtn = document.querySelector('.nav-btn.show');
+let closeBtn = document.querySelector('.nav-btn.close');
+
+navBtn.addEventListener('click', toggleActiveClass);
+closeBtn.addEventListener('click', toggleActiveClass);
+
+function toggleActiveClass() {
+    if(navEl.classList.contains('active')) {
+        navEl.classList.remove('active');
+    }else{
+        navEl.classList.add('active');
+    }
+}
+
+//hide header on scroll
+const pageHeader = document.querySelector('.page-header');
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    pageHeader.classList.remove('toggle-header');
+  } else {
+    pageHeader.classList.add('toggle-header');
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+</script>
