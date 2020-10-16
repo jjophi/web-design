@@ -93,6 +93,13 @@ a{
 .page-nav .brand img{
    
 }
+.sec-page .page-nav .logo {
+    width: 45px;
+}
+.sec-page .page-nav .brand{
+    padding-left: 50px;
+}
+
 .page-nav h1{
     font-size: .94rem;
     font-weight: 500;
@@ -515,6 +522,28 @@ a{
     font-size: .9rem;
 }
 
+/*sub-pages*/
+.header-pages{
+    padding: 1.4rem 0;
+    background-color: #f4f4f4;
+}
+.page-content{
+    padding: 3rem 0;
+    background-color: #fff;
+}
+.page-content .container{
+    width: 60%;
+}
+.page-content .sub{
+    flex: 0 0 auto;
+    width: 40%;
+}
+.page-content .main{
+    padding: 0 3rem;
+    
+}
+
+
 /*media query*/
 @media only screen and (min-width: 560px) {
     .page-header{
@@ -529,6 +558,12 @@ a{
     .page-nav .logo{
         width: 90px;
         padding: .3rem 0;
+    }
+    .sec-page .page-nav .logo {
+        width: 66px;
+    }
+    .sec-page .page-nav .brand{
+        padding-left: 74px;
     }
     .page-nav h1{
         font-size: 1.4rem;
