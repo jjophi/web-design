@@ -206,6 +206,8 @@ h2.sec-title{
         opacity: 1;
     }
 }
+
+
 .main-nav{
     display: none;
 }
@@ -270,9 +272,7 @@ h2.sec-title{
 }
 /*hero*/
 .hero{
-    /* background: url(../images/slider1920-4.jpg) no-repeat center; */
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(../images/slider1920-4.jpg) no-repeat center;
     background-size: cover;
 }
 .hero .container{
@@ -302,8 +302,7 @@ h2.sec-title{
     font-weight: 500;
     margin: 0 auto 1rem;
     padding: 0;
-}
-
+} 
 /*highlight*/
 .page-highlight{
     background-color: #f4f4f4;
@@ -329,17 +328,14 @@ h2.sec-title{
     line-height: 1.4;
     margin: 1rem 0;
 }
-
 /*about*/
 .page-about{
     background-color: #fff;
     padding: 2rem 0;
 }
 .page-about .container{
-    display: block;
-}
-.page-about .info-text{
-    padding: 1rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 .page-about h2{
     color: var(--primary);
@@ -368,42 +364,7 @@ h2.sec-title{
     border-radius: 4px;
     line-height: 1;
 }
-/*people*/
-.page-people{
-    padding: 1rem 0;
-    background-color: #f4f4f4;
-}
-.therapist-details{
-    width: 100%;
-    display: block;
-}
-.profile-img{
-    flex: none;
-    width: 50%;
-    height: 160px;
-    background-color: #fff;
-    margin-right: .4rem;
-    float: left;
-}
-.therapist-details .profile-text{
-    margin-top: 1rem;
-}
-.therapist-details h3{
-    font-size: 1.3rem;
-    margin-bottom: .6rem;
-}
-.therapist-details h3 > span{
-    color: var(--primary);
-    font-size: .9rem;
-    font-style: italic;
-}
-.therapist-details p{
-    font-size: .9rem;
-    line-height: 1.5;
-}
-.therapist-details .btn{
-    margin-top: 1rem;
-}
+
 /*appointment*/
 .appointment{
     padding: 2rem 0;
@@ -453,6 +414,9 @@ h2.sec-title{
 }
 
 /*map*/
+.map{
+    /* padding: 0 0 2rem; */
+}
 .google-map{
     position: relative;
     padding-bottom: 80%;
@@ -488,7 +452,7 @@ h2.sec-title{
     padding: 1.4rem 1.4rem 1.4rem 2.6rem;
     font-size: .9rem;
     line-height: 1.5;
-    box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.3);
     border-radius: 6px;
 }
 .sec-testimonials blockquote p::after{
@@ -499,7 +463,7 @@ h2.sec-title{
     border-top: 10px solid #fff;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    filter: drop-shadow(2px 5px 3px rgba(0,0,0,0.3));
+    filter: drop-shadow(2px 5px 3px rgba(0,0,0,0.4));
 }
 .sec-testimonials footer{
     display: flex;
@@ -542,10 +506,11 @@ h2.sec-title{
 .footer-main{
     background-color: var(--primary);
     color: var(--text-secondary);
-    padding: 1rem 0;
+    padding: 3rem 0;
 }
 .footer-main .container{
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .footer-copyright{
     background-color: #6dffa6;
@@ -705,26 +670,15 @@ h2.sec-title{
     .hero-text p{
         font-size: 1.4rem;
         padding: 0 5rem;
-    }
-
-    /*highlight*/
+    } 
     .page-highlight{
         padding: 5rem 0;
     }
-
-    /*about*/
     .page-about{
         padding: 5rem 0;
     }
-    .page-about .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .page-about .col{
-        padding: 0 1.4rem;
-    }
     .page-about .info-text{
-       padding: 0;
+        padding: 0 3rem;
     }
     .page-about h2{
         color: var(--primary);
@@ -734,34 +688,6 @@ h2.sec-title{
         font-size: 1.1rem;
         line-height: 1.5;
     }
-    /*people*/
-    .page-people{
-        padding: 3rem 0;
-    }
-    .therapist-details{
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-    }
-    .profile-img{
-        flex: none;
-        width: 260px;
-        height: 320px;
-        background-color: #fff;
-        margin-right: 1.4rem;
-        float: none;
-    }
-    .therapist-details .profile-text{
-        margin-top: 0;
-    }
-    .therapist-details h3{
-        font-size: 1.6rem;
-    }
-    .therapist-details p{
-        font-size: 1.1rem;
-    }
-
     .map{
         padding: 2rem 0;
     }
@@ -773,7 +699,7 @@ h2.sec-title{
         flex-flow: row;
     }
     .sec-testimonials .testimonial-card{
-        padding: .8rem;
+        padding: 3rem;
     }
     .appointment-form{
         padding: 0 1.6rem;
@@ -784,13 +710,8 @@ h2.sec-title{
     .appointment .contacts{
         font-size: 1.2rem;
     }
-    /*footer*/
-    .footer-main{
-        padding: 3rem 0;
-    }
     .footer-main .container{
-        display: grid;
-        grid-template-columns: 2fr repeat(3, 1fr);
+        grid-template-columns: minmax(280px, 2fr) repeat(auto-fit, minmax(120px, 1fr));
     }
     .page-footer .col + .col{
         margin-top: 0;
@@ -833,13 +754,5 @@ h2.sec-title{
     .appointment .booking-form > div{
         width: 50%;
     }
-    .sec-testimonials .testimonial-card{
-        padding: 1.2rem;
-    }
-    .therapist-details{
-        width: 60%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-    }
+    
 }
