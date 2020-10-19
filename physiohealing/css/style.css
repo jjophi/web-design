@@ -474,6 +474,7 @@ h2.sec-title{
 .sec-testimonials .testimonials{
     display: flex;
     flex-flow: column;
+    justify-content: center;
 }
 .sec-testimonials blockquote{
     padding: 0;
@@ -481,6 +482,7 @@ h2.sec-title{
 }
 .sec-testimonials .testimonial-card{
     padding: 1rem 0;
+    flex: 1 1 auto;
 }
 .sec-testimonials blockquote p{
     position: relative;
@@ -774,6 +776,7 @@ h2.sec-title{
     }
     .sec-testimonials .testimonial-card{
         padding: .8rem;
+        max-width: 50%;
     }
     .appointment-form{
         padding: 0 1.6rem;
