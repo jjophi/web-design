@@ -6,7 +6,11 @@
     --secondary: #000033;
     --text-primary: #000000;
     --text-secondary:  #fff;
-    /*hue values: 143, 194*/
+    /*
+    hue values: 143, 194
+    secondary: #000033
+    
+    */
 }
 html {
     box-sizing: border-box;
