@@ -1,0 +1,77 @@
+:root{
+    --primary-h: 143;
+    --primary-s: 50%;
+    --primary-l: 50%;
+    --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+    --secondary: #000033;
+    --text-primary: #000000;
+    --text-secondary:  #fff;
+    /*
+    hue values: 143, 194
+    secondary: #000033
+     background-color: hsl(calc(var(--primary-h) + 9) calc(var(--primary-s) * 1.42) calc(var(--primary-l) * .96));
+    */
+}
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+*{ 
+    font-family: inherit; 
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-primary);
+}
+h1, h2, h3, h4, h5, h6, .font-title{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+input,textarea{
+    display: inline-block;
+    outline: transparent;
+}
+/*base*/
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+a{
+    text-decoration: none;
+}
+
+/*main*/
+
+
+
+
+
+
+/*MQ 768*/
+@media only screen and (min-width: 768px) {
+
+
+}
+/*MQ 1200*/
+@media only screen and (min-width: 1200px) {
+
+
+}
