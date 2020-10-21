@@ -90,7 +90,7 @@ h2.sec-title{
 /*sub-head*/
 .sub-head{
     background-color: var(--primary);
-    color: #fff;
+    color: var(--text-secondary);
 }
 .sub-head .container{
     font-size: .8rem;
@@ -114,12 +114,12 @@ h2.sec-title{
     font-size: .6rem;
 }
 .sub-head .tel-num{
-    color: #fff;
+    color: var(--text-secondary);
     font-weight: 500;
     font-size: 1rem;
 }
 .sub-head .info.booking a{
-    color: #fff;
+    color: var(--text-secondary);
 }
 .sub-head .info.email{
     /* background-color: #23d080; */
@@ -386,7 +386,7 @@ h2.sec-title{
 /*people*/
 .page-people{
     padding: 1rem 0;
-    background-color: var(--text-secondary);
+    background-color: #f4f4f4;
 }
 .therapist-details{
     width: 100%;
@@ -769,7 +769,7 @@ h2.sec-title{
         flex: none;
         width: 260px;
         height: 320px;
-        background-color: #fff;
+        background-color: var(--text-secondary);
         margin-right: 1.4rem;
         float: none;
     }
