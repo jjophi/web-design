@@ -35,6 +35,9 @@ h1, h2, h3, h4, h5, h6, .font-title{
 ol, ul {
     list-style: none;
 }
+p + p{
+    margin-top: 1rem;
+}
 img {
     display: inline-block;
     max-width: 100%;
@@ -636,11 +639,38 @@ h2.sec-title{
     text-align: left;
     color: var(--primary);
 }
+.page-section .col.title h2{
+    margin-bottom: 1rem;
+}
 .page-section .col.content{
+    line-height: 1.5;
 }
-.page-section .listing.columns{
+.listing.bulleted li{
+    margin: .4rem 0;
+    position: relative;
+    padding-left: 1rem;
 }
-
+.listing.bulleted li::before{
+    content: "*";
+    color: var(--primary);
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    font-size: 1.2rem;
+}
+.faq{
+    margin: 0;
+}
+.faq dt{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.faq dd{
+    margin: .2rem 0 1.4rem .8rem;
+    font-weight: .92rem;
+    
+}
+/*MQ768*/
 @media only screen and (min-width: 768px) {
     .page-header.toggle-header{
         transform: translateY(-58px);
@@ -837,16 +867,15 @@ h2.sec-title{
     }
     .page-section .col.title{
         flex: 0 0 auto;
-        width: 30%;
+        width: 34%;
         text-align: right;
     }
     .page-section .listing.columns{
         columns: 2;
     }
     
-    
 }
-
+/*MQ1200*/
 @media only screen and (min-width: 1200px) {
     
     .sub-head .info.email{
