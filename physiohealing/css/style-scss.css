@@ -469,6 +469,16 @@ h2.sec-title{
     min-height: 140px;
     resize: vertical;
 }
+/*contactform 7 styles*/
+.wpcf7-form.invalid{
+
+}
+.wpcf7-form.invalid{
+
+}
+.field-input.wpcf7-not-valid{
+    border-color: #fd1043 !important;
+}
 
 /*map*/
 .google-map{

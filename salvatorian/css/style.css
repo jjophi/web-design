@@ -523,7 +523,7 @@ a{
 }
 
 /*sub-pages*/
-.header-pages{
+.pages-breadcrumb{
     padding: 1.4rem 0;
     background-color: #f4f4f4;
 }
@@ -680,6 +680,7 @@ a{
         min-width: 180px;
         background-color: #fff;
         padding: .8rem 1.4rem;
+        box-shadow: 0 2px 2px 2px rgba(0,0,0,0.1);
     }
     .main-link .sub-links a{
         color: #0D639D;
