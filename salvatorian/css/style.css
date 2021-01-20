@@ -480,6 +480,9 @@ a{
 .page-footer a{
     color: #fff;
 }
+.page-footer a svg{
+    color: #fff;
+}
 .footer-links{
     padding: 2rem 0;
     background-color: #0B2B3F;

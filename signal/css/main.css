@@ -1,0 +1,92 @@
+/*variables*/
+:root {
+    --navbar-height: 60px
+}
+
+/*box-sizing*/
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+/*reset*/
+body{
+    margin: 0;
+}
+
+/*layout*/
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: .6rem;
+}
+
+
+/*navbar*/
+.has-fixed-nav{
+    padding-top: var(--navbar-height);
+}
+.app-navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--navbar-height);
+    background-color: #fff;
+    /* box-shadow: 0 2px 2px 1px rgba(0,0,0,0.03); */
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.app-navbar > .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navbar-brand a{
+    text-decoration: none;
+    display: block;
+}
+.app-logo{
+    height: 30px;
+}
+.navbar-menu{
+    margin-left: auto;
+}
+.menu-listing{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+
+}
+.menu-listing li{
+    
+}
+.menu-listing li + li{
+    margin-left: 14px;
+}
+.menu-listing a{
+    text-decoration: none;
+}
+.menu-listing{
+    
+}
+.menu-listing{
+    
+}
+
+
+
+/*media query*/
+@media (min-width: 600px) {
+    
+}
+@media (min-width: 900px) {
+    
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1152px;
+        padding: 0;
+    }
+}
